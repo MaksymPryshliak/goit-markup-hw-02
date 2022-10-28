@@ -290,11 +290,15 @@ address a {
     margin-top: 94px;
 }
 
-.button_list .port_btn {
-    display: inline-block;
+.button_list {
+    padding-left: 512px;
 }
 
 .port_btn {
+    display: inline-block;
+}
+
+.port_btn .filter {
     font-weight: 500;
     font-size: 16px;
     line-height: 162%;
@@ -307,8 +311,8 @@ address a {
     margin-right: 8px;
 }
 
-.port_btn:active,
-.port_btn:hover {
+.filter:active,
+.filter:hover {
     color: var(--light-color);
     background-color: var(--brand-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
