@@ -311,7 +311,7 @@ address a {
     margin-right: 8px;
 }
 
-.filter:active,
+.filter:focus,
 .filter:hover {
     color: var(--light-color);
     background-color: var(--brand-color);
