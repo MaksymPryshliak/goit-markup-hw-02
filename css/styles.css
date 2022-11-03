@@ -33,10 +33,7 @@ header .container{
     justify-content: space-between;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
+
 
 a {
     text-decoration: none;
@@ -382,13 +379,9 @@ address a {
 .port_list_item {
     width: 370px;
     height: 404px;
-    flex-basis: calc(30.333% - 20px);
+    /* flex-basis: calc(33.333% - 20px); */
     /* padding-right: 30px;
     padding-top: 30px; */
-}
-
-.port_list_item:nth-child(-n + 3) {
-    padding-top: 0;
 }
 
 .port_list_item h2 {
