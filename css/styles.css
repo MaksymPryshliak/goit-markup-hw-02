@@ -122,9 +122,6 @@ ul {
     color: var(--secondary-color);
 }
 
-.section {
-    padding: 94px 0;
-}
 
 .uppersite {
     min-height: 600px;
@@ -165,14 +162,12 @@ ul {
 
 .features {
     min-height: 286px;
-    
 }
 
 .features_list {
     display: flex;
-
     text-align:center;
-
+    padding-top: 94px;
 }
 
 .features_item {
