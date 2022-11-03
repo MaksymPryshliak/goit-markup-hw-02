@@ -169,7 +169,7 @@ ul {
 }
 
 .features_list {
-
+    display: flex;
     padding-top: 94px;
     text-align:center;
 
@@ -179,8 +179,6 @@ ul {
     width: 270px;
     height: 98px;
     margin-right: 30px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .features_item:last-child {
@@ -220,6 +218,7 @@ ul {
 
 .project_list {
     text-align: center;
+    display: flex;
 }
 
 .project_item {
@@ -255,6 +254,9 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
+.card_list{
+    display: flex;
+}
 .card:last-child{
     margin-right: 0;
 }
