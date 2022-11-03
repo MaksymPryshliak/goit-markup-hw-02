@@ -125,9 +125,9 @@ ul {
 
 .uppersite {
     min-height: 600px;
-   background-image: url(/img/background-header.jpg);
-   background-repeat: no-repeat;
-   background-position: 50%;
+    background-image: url(./img/background-header.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .site_header {
