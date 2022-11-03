@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -286,7 +286,7 @@ ul {
 footer {
     background-color: var(--dark-background);
     padding-left: 215px;
-    padding: 60px;
+    padding: 60px 0;
 
 }
 
@@ -376,13 +376,15 @@ address a {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .port_list_item {
     width: 370px;
     height: 404px;
-    padding-right: 30px;
-    padding-top: 30px;
+    flex-basis: calc(33.333% - 20px);
+    /* padding-right: 30px;
+    padding-top: 30px; */
 }
 
 .port_list_item:nth-child(-n + 3) {
@@ -394,7 +396,7 @@ address a {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-color);
-    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .port_list_item p {
@@ -402,6 +404,12 @@ address a {
     line-height: 188%;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    margin-top: 4px;
 }
 
+.port-title {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+}
+.port_list_item img {
+    display: block;
+}
