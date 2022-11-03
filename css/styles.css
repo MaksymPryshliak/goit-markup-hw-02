@@ -12,37 +12,52 @@
 }
 
 body {
-    width: 1600px;
-    margin: 0 auto;
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #FFF;
 }
 
-header {
-    min-height: 80px;
-    border: 1px solid #ECECEC;
-    
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-header a {
-    padding: 32px 25px;
+header {
+
+    border: 1px solid #ECECEC;
+    padding: 25px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 a {
-    float: left;
     text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
     font-size: 26px;
-    margin-left: 215px;
-    padding-top: 24px;
     color: #001;
-    margin-right: 68px;
+    /* margin-right: 68px; */
     text-decoration: none;
+    display: flex;
+}
+
+.logo a{
+    color: black;
 }
 
 .logo span {
@@ -53,38 +68,65 @@ ul {
     list-style-type: none;
 }
 
+.navbar {
+    display: flex;
+    padding-left: 93px;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.contacts li{
+    padding-right: 50px;
+}
+
+.contacts li:last-child{
+    padding-right: 0;
+}
+
 .navbar_item {
-    float: left;
+    padding-right: 50px;
 }
 
 .navbar_item a {
     display: block;
-    padding: 32px 25px;
     color: var(--primary-color);
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
+    line-height: 1;
     font-size: 14px;
     letter-spacing: 0.02em;
 }
 
 .navbar_item a:hover,
+.navbar_item a:focus,
 .mail:hover, .mail:focus, 
 .tel:hover, .tel:focus {
     color: var(--brand-color);
 } 
 
-.mail {
-    padding-left: 294px;
+.navbar_item:last-child {
+    padding-right: 0;
 }
 
+.navbar_item .active_page{
+    color: var(--brand-color);
+}
+
+
 .mail, .tel {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    line-height: 1;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+}
+
+.section {
+    padding: 94px 0;
 }
 
 .uppersite {
@@ -92,26 +134,22 @@ ul {
     background-color: var(--dark-background);
 }
 
-h1 {
+.site_header {
     color: var(--light-color);
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 136%;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     padding-top: 200px;
 }
 
-button {
+.frst_btn {
     display: block;
     width: 216px;
     height: 50px;
     background: var(--brand-color);
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     align-items: center;
@@ -122,10 +160,9 @@ button {
     border-radius: 4px;
     border-style: none;
     margin-top: 30px;
-    cursor: pointer;
 }
 
-button:active {
+.frst_btn:active {
     background-color: #188CE8;
 }
 
@@ -149,12 +186,13 @@ button:active {
     vertical-align: top;
 }
 
+.features_item:last-child {
+    margin-right: 0;
+}
+
 .features_subheader {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-colors);
@@ -162,11 +200,8 @@ button:active {
 }
 
 .features_item p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     margin-top: 10px;
@@ -178,11 +213,8 @@ button:active {
 }
 
 .our_projects h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-color);
@@ -198,6 +230,10 @@ button:active {
     margin-right: 30px;
 }
 
+.project_item:last-child {
+    margin-right: 0;
+}
+
 .our_team {
     min-height: 648px;
     background-color: #F5F4FA;
@@ -205,12 +241,8 @@ button:active {
 }
 
 .our_team h2 {
-    margin: 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-color);
@@ -226,12 +258,14 @@ button:active {
     border-radius: 0px 0px 4px 4px;
 }
 
+.card:last-child{
+    margin-right: 0;
+}
+
 .card h3 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-color);
@@ -240,11 +274,8 @@ button:active {
 }
 
 .card p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
@@ -253,9 +284,9 @@ button:active {
 }
 
 footer {
-    min-height: 252px;
     background-color: var(--dark-background);
     padding-left: 215px;
+    padding: 60px;
 
 }
 
@@ -265,13 +296,10 @@ footer a {
 
 .footer-logo {
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1;
     letter-spacing: 0.03em;
     color: var(--light-color);
-    padding-top: 60px;
 }
 
 .footer-logo span {
@@ -283,23 +311,97 @@ address a {
 }
 
 .address {
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     color: var(--light-color);
     padding-top: 20px;
 }
 .footer-mail,
 .footer-tel {
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding-top: 9px;
 }
+
+.footer-mail:focus,
+.footer-tel:focus,
+.footer-mail:hover,
+.footer-tel:hover,
+.address:focus,
+.address:hover {
+    color: var(--brand-color);
+}
+
+.portfolio_cards {
+    min-height: 1360px;
+    padding: 94px 0;
+}
+
+.button_list {
+    display: flex;
+    justify-content: center;
+}
+
+/* .port_btn {
+    display: inline-block;
+} */
+
+.port_btn .filter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border-style: none;
+    padding: 6px 22px;
+    margin-right: 8px;
+}
+
+.filter:focus,
+.filter:hover {
+    color: var(--light-color);
+    background-color: var(--brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.portfolio_list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.port_list_item {
+    width: 370px;
+    height: 404px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.port_list_item:nth-child(-n + 3) {
+    padding-top: 0;
+}
+
+.port_list_item h2 {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.port_list_item p {
+    font-size: 16px;
+    line-height: 188%;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    margin-top: 4px;
+}
+
