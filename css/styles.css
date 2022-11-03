@@ -382,7 +382,7 @@ address a {
 .port_list_item {
     width: 370px;
     height: 404px;
-    flex-basis: calc(33.333% - 20px);
+    flex-basis: calc(30.333% - 20px);
     /* padding-right: 30px;
     padding-top: 30px; */
 }
